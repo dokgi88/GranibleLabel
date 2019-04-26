@@ -1,0 +1,11 @@
+use_frameworks!
+
+target 'GranibleLabel_Example' do
+  pod 'GranibleLabel', :path => '../'
+
+  target 'GranibleLabel_Tests' do
+    inherit! :search_paths
+
+    
+  end
+end
