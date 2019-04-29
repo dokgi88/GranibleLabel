@@ -1,0 +1,6 @@
+framework module GranibleLabel {
+  umbrella header "GranibleLabel-umbrella.h"
+
+  export *
+  module * { export * }
+}

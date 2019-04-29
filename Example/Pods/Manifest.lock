@@ -1,0 +1,16 @@
+PODS:
+  - GranibleLabel (0.1.0)
+
+DEPENDENCIES:
+  - GranibleLabel (from `../`)
+
+EXTERNAL SOURCES:
+  GranibleLabel:
+    :path: "../"
+
+SPEC CHECKSUMS:
+  GranibleLabel: c10c21e92a3430378b51c51a92e58158ab800d18
+
+PODFILE CHECKSUM: f756dbab6af5aa2df5ea1cbc0d5dbe1afaf2ce8e
+
+COCOAPODS: 1.7.0.beta.3

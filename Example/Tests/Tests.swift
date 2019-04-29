@@ -1,5 +1,4 @@
 import XCTest
-import GranibleLabel
 
 class Tests: XCTestCase {
     

@@ -1,0 +1,6 @@
+framework module Pods_GranibleLabel_Example {
+  umbrella header "Pods-GranibleLabel_Example-umbrella.h"
+
+  export *
+  module * { export * }
+}
