@@ -36,7 +36,7 @@ public class GranibleLabel: UIView {
     public var colors: [UIColor]? {
         didSet {
             guard let colors = colors else {return}
-            gradient.colors = colors
+            gradient.colors = colors.map{$0.cgColor}
         }
     }
     public var autoreverses: Bool? {
@@ -67,11 +67,20 @@ public class GranibleLabel: UIView {
         let gradientAnimation = CABasicAnimation(keyPath: "locations")
         gradientAnimation.duration = 3.0
         gradientAnimation.repeatCount = .infinity
+        gradientAnimation.isRemovedOnCompletion = false
         return gradientAnimation
     }()
     
-    convenience init() {
-        self.init()
+    public override init(frame: CGRect) {
+        super.init(frame: frame)
+        
+        backgroundColor = .clear
+        addSubview(gradientLabel)
+        layout()
+    }
+    
+    public required init?(coder aDecoder: NSCoder) {
+        super.init(coder: aDecoder)
         
         backgroundColor = .clear
         addSubview(gradientLabel)
@@ -135,8 +144,9 @@ public class GranibleLabel: UIView {
         gradientAnimation.fromValue = fromValue
         gradientAnimation.toValue = toValue
         gradient.locations = [0.0, 0.5]
-        gradient.add(gradientAnimation, forKey: "action")
+        gradient.add(gradientAnimation, forKey: "gradientAnimation")
     }
+    
 }
 
 extension GranibleLabel {
