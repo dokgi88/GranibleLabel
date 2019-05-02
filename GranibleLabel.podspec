@@ -21,11 +21,11 @@ Pod::Spec.new do |s|
 TODO: Add long description of the pod here.
                        DESC
 
-  s.homepage         = 'https://github.com/dokgi1988/GranibleLabel'
+  s.homepage         = 'https://github.com/dokgi88/GranibleLabel'
   s.screenshots      = 'https://github.com/dokgi88/dokgi88.github.io/blob/master/_images/GranibleLabel/titleGraniblelabelFullColor.png?raw=true'
   s.license          = { :type => 'MIT', :file => 'LICENSE' }
-  s.author           = { 'dokgi1988' => 'dokgi88@gmail.com' }
-  s.source           = { :git => 'https://github.com/dokgi1988/GranibleLabel.git', :tag => s.version.to_s }
+  s.author           = { 'dokgi88' => 'dokgi88@gmail.com' }
+  s.source           = { :git => 'https://github.com/dokgi88/GranibleLabel.git', :tag => s.version.to_s }
 
 
   s.swift_versions = '5.0'
