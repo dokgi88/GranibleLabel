@@ -8,7 +8,7 @@
 
 Pod::Spec.new do |s|
   s.name             = 'GranibleLabel'
-  s.version          = '1.0.0'
+  s.version          = '1.0.1'
   s.summary          = 'Very easy and simple gradation animate Label.'
 
 # This description is used to generate tags and improve search results.
@@ -17,9 +17,7 @@ Pod::Spec.new do |s|
 #   * Write the description between the DESC delimiters below.
 #   * Finally, don't worry about the indent, CocoaPods strips it!
 
-  s.description      = <<-DESC
-TODO: Add long description of the pod here.
-                       DESC
+  s.description      = 'Veeeeeeeeeeeeeeeery easy to use and simple gradation animate Label.'
 
   s.homepage         = 'https://github.com/dokgi88/GranibleLabel'
   s.screenshots      = 'https://github.com/dokgi88/dokgi88.github.io/blob/master/_images/GranibleLabel/titleGraniblelabelFullColor.png?raw=true'
