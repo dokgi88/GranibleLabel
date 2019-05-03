@@ -26,6 +26,7 @@ pod 'GranibleLabel'
 ## Example
 
 **_Up to 4 colors can be set._**
+**_Up to three colors available in infinity mode._**
 
 * Set no animation normal gradient
 ```swift
@@ -46,22 +47,21 @@ label.direction = .top
 label.animate = true
 ```
 
-* Set infinity animation
+* Set infinity mode
 ```swift
-/* 
-* If you set the first color and the last color the same, you can implement the infinity animation effect.
-*/
-label.colors = [UIColor.red, UIColor.orange, UIColor.red]
+label.direction = .top
+label.animate = true
+label.infinity = true
 ```
 
-* Set auto reverses
+* Set reverse mode
 ```swift
 /* 
 * autoreverses default = false
 */
 label.direction = .top
 label.animate = true
-label.autoreverses = true
+label.reverse = true
 ```
 
 * And other settings
