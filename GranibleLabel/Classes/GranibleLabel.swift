@@ -39,10 +39,10 @@ public class GranibleLabel: UIView {
             gradient.colors = colors.map{$0.cgColor}
         }
     }
-    public var autoreverses: Bool? {
+    public var reverse: Bool? {
         didSet {
-            guard let autoreverses = autoreverses else {return}
-            gradientAnimation.autoreverses = autoreverses
+            guard let reverse = reverse else {return}
+            gradientAnimation.autoreverses = reverse
         }
     }
     public var duration: Double? {
@@ -53,6 +53,7 @@ public class GranibleLabel: UIView {
     }
     public var direction: GranibleLabelDirection?
     public var animate = false
+    public var infinity = false
     
     private let gradientLabel: UILabel = {
         let label = UILabel()
@@ -107,6 +108,10 @@ public class GranibleLabel: UIView {
     }
     
     private func setGradient() {
+        if infinity, let colors = colors, let firstColor = colors.first {
+            self.colors?.append(firstColor)
+        }
+        
         guard let gradientDirection = direction else {return}
         switch gradientDirection {
         case .top:
