@@ -39,8 +39,9 @@ class GranibleViewController: UIViewController {
         label.textAlignment = .center
         label.font = .boldSystemFont(ofSize: 40)
         label.numberOfLines = 0
-        label.colors = [.pantone_roseQuartz, .pantone_livingCoral, .pantone_serenity, .pantone_roseQuartz]
+        label.colors = [.pantone_roseQuartz, .pantone_livingCoral, .pantone_serenity]
         label.animate = true
+        label.infinity = true
         return label
     }()
     private let reverseLabel: GranibleLabel = {
@@ -52,7 +53,7 @@ class GranibleViewController: UIViewController {
         label.numberOfLines = 0
         label.colors = [.pantone_roseQuartz, .pantone_livingCoral, .pantone_serenity]
         label.animate = true
-        label.autoreverses = true
+        label.reverse = true
         return label
     }()
 
