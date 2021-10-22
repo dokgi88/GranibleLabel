@@ -5,9 +5,9 @@ _<p align="right"> Designed by [yoon](https://blog.naver.com/dusqkq0) </p>_
 
 # GranibleLabel
 
-![Swift](https://img.shields.io/badge/Swift-5.0-orange.svg)
-![Platform](https://img.shields.io/badge/Platform-iOS-lightgrey.svg)
-[![License](https://img.shields.io/badge/license-MIT-green.svg)](https://github.com/dokgi88/GranibleLabel/blob/master/LICENSE)
+![Swift](https://img.shields.io/badge/Swift-5.0-FA7343.svg?&style=flat-square&logo=Swift&logoColor=white)
+![Platform](https://img.shields.io/badge/Platform-iOS-000000.svg?&style=flat-square&logo=iOS&logoColor=white)
+[![License](https://img.shields.io/badge/license-MIT-green.svg?&style=flat-square)](https://github.com/dokgi88/GranibleLabel/blob/master/LICENSE)
 
 | top | left | right | bottom |
 |:---:|:---:|:---:|:---:|
